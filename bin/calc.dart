@@ -2,6 +2,7 @@
 licensed under the MIT license
 */
 import 'dart:math';
+import 'package:termstyle/termstyle.dart';
 
 void handleComputations(String input){
   List<String> splitArgs = input.split(' ');
@@ -13,32 +14,37 @@ void handleComputations(String input){
     String operation = splitArgs[1];
     if (operation == '+'){
       double result = argOne + argTwo;
-      print('$result');
+      String panda = getEmoji('pandaFace');
+      printColoredString('$panda $result', 'cyan');
     }
     else if (operation == '-') {
-      print('$operation');
       double result = argOne - argTwo;
-      print('$result');
+      String bear = getEmoji('bearFace');
+      printColoredString('$bear $result', 'cyan');
     }
     else if (operation == 't') {
       double result = argOne * argTwo;
-      print('$result');
+      String tiger = getEmoji('tigerFace');
+      printColoredString('$tiger $result', 'cyan');
     }
     else if (operation == '/') {
       double result = argOne / argTwo;
-      print('$result');
+      String dog = getEmoji('dogFace');
+      printColoredString('$dog $result', 'cyan');
     }
     else if (operation == 'p') {
       var result = pow(argOne, argTwo);
-      print('$result');
+      String unicorn = getEmoji('unicornHead');
+      printColoredString('$unicorn $result', 'cyan');
     }
     else {
-      print('$operation');
-      print('Invalid args supplied!');
+      String sad = getEmoji('angryFace');
+      printColoredString('$sad Invalid args supplied!', 'red');
     }
   } 
   catch (e) {
-    print('Invalid args were supplied!');
+    String sad = getEmoji('angryFace');
+    printColoredString('$sad Invalid args were supplied!', 'red');
   }
 }
 
