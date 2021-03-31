@@ -1,0 +1,12 @@
+language:
+  - "dart"
+script:
+  - "dart pub get"
+  - "make build"
+  - "cd dist"
+  - "chmod a+x calc"
+  - "calc 4.5 + 5.6"
+  - "calc 4.5 - 5.6"
+  - "calc 4.5 t 5.6"
+  - "calc 4.5 / 5.6"
+  - "calc 4 p 5"
