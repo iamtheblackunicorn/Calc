@@ -1,4 +1,7 @@
 # CALC :octopus:
+
+[![Build Status](https://travis-ci.com/iamtheblackunicorn/Calc.svg?branch=main)](https://travis-ci.com/iamtheblackunicorn/Calc)
+
 *A simple CLI app to do quick calculations on the command-line.* :octopus:
 
 ## About :books:
