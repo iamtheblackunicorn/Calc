@@ -4,6 +4,12 @@ licensed under the MIT license
 import 'dart:math';
 import 'package:termstyle/termstyle.dart';
 
+void versionHandler(){
+  String infoString = 'Calc v.1.1.0 by The Black Unicorn';
+  String bear = getEmoji('bearFace');
+  printColoredString('$bear $infoString', 'green');
+}
+
 void handleComputations(String input){
   List<String> splitArgs = input.split(' ');
   try {
@@ -49,6 +55,16 @@ void handleComputations(String input){
 }
 
 void main(List<String> arguments){
-  String joinedArgs = arguments.join(' ');
-  handleComputations(joinedArgs);
+  int argLength = arguments.length;
+  if (argLength == 3){
+    String joinedArgs = arguments.join(' ');
+    handleComputations(joinedArgs);
+  }
+  else if (arguments[0] == '--version'){
+    versionHandler();
+  }
+  else {
+    String sad = getEmoji('angryFace');
+    printColoredString('$sad Invalid options supplied!', 'red');
+  }
 }

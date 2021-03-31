@@ -10,3 +10,5 @@ script:
   - "./calc 4.5 t 5.6"
   - "./calc 4.5 / 5.6"
   - "./calc 4 p 5"
+  - "./calc hello"
+  - "./calc --version"
