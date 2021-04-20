@@ -1,6 +1,6 @@
 # CALC :octopus:
 
-[![Build Status](https://travis-ci.com/iamtheblackunicorn/Calc.svg?branch=main)](https://travis-ci.com/iamtheblackunicorn/Calc)
+[![GitHub CI](https://github.com/iamtheblackunicorn/Calc/actions/workflows/dart.yml/badge.svg)](https://github.com/iamtheblackunicorn/Calc/actions)
 
 *A simple CLI app to do quick calculations on the command-line.* :octopus:
 
